@@ -15,18 +15,6 @@ function Navbar() {
                 <Link to="/recipe/:id" className="nav-link">Your Recipes</Link>
                 <Link to="/about" className="nav-link">About</Link> 
 
-              {/* Allergen Icons */}
-              <div className="allergen-icons">
-                <span title="Peanut Allergy">
-                  <i className="fas fa-peanut"></i>
-                </span>
-                <span title="Dairy Allergy">
-                  <i className="fas fa-milk-alt"></i>
-                </span>
-                <span title="General Allergy">
-                  <i className="fas fa-exclamation-triangle"></i>
-                </span>
-              </div>
             </div>
         </nav>
     </>
