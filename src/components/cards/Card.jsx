@@ -9,7 +9,7 @@ function Card(props) {
         <div className="cards__container">
             <div className="cards__wrapper">
                 <ul className="cards__items">
-                    {/* pass in the card component */}
+                    {/* Pass in the card component */}
                     <CardItem 
                         src="flourless-peanut-butter-cookies-4.jpg" 
                         text="Peanut Butter cookies"

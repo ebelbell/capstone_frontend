@@ -7,7 +7,7 @@ function Navbar() {
     <>
         <nav className="Navbar">
             <div className="navbar-container">
-                {/* utilize react-router. The link will contain Navbar paths */}
+                {/* Utilize react-router. The link will contain Navbar paths */}
                 <Link to="/" className="nav-link">Home</Link>
                 {/* Recipe Form for creating and updating */}
                 <Link to="/recipe-form" className="nav-link">Create A Recipe </Link>
