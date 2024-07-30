@@ -17,6 +17,17 @@ const SavedRecipe = () => {
     fetchRecipes();
   }, []);
 
+  const deleteRecipe = async (id) => {
+    try {
+      let res = await axios.delete(`http://localhost:3000/recipe/${id}`)
+      console.log(res.data);
+      alert('Deleted!');
+      window.location.reload(); //reload when the alert is clicked
+    } catch(err) {
+      console.error(err);
+    }
+  }
+
   return (
     <div>
       <h1>Saved Recipes</h1>
@@ -28,6 +39,11 @@ const SavedRecipe = () => {
             <p>{recipe.description}</p>
             <p>Allergens: {recipe.allergens.map(a => a.name).join(', ')}</p>
             <Link to={`/recipe/edit/${recipe._id}`}>Edit</Link>
+            
+            {/* use the anon function so that that the function isn't called upon rendering */}
+            <button onClick={() => {
+              deleteRecipe(recipe._id);
+            }}>Delete</button>
           </li>
         ))}
       </ul>

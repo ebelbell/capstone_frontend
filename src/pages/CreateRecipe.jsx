@@ -1,12 +1,10 @@
 // RecipeForm.jsx
 import React, { useState } from 'react'; //use params to pull the id to the frontend
-import { useParams } from 'react-router-dom';
 //import { useEffect } from 'react';
 import axios from 'axios';
 
 const RecipeForm = () => {
   // FORM FIELDS
-  const { id } = useParams();
 
   const [recipe, setRecipe] = useState({
     recipeTitle: '',
@@ -39,9 +37,9 @@ const RecipeForm = () => {
     //console.log(id);
 
     try {
-      let res = await axios.put(`http://localhost:3000/recipe/${id}`, recipe); //id from parameters
+      let res = await axios.post('http://localhost:3000/recipe/', recipe); //id from parameters
       //console.log(res.data);
-      alert('Recipe updated!');
+      alert('Recipe created!');
     } catch (err) {
         console.error(err);
     }
@@ -58,7 +56,7 @@ const RecipeForm = () => {
   ///////////// USER ENTRY //////////////
   return (
     <div>
-      <h2>Create or Update A Recipe</h2>
+      <h2>Create A Recipe</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="recipeTitle">Recipe Title: </label>

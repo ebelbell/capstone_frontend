@@ -9,6 +9,7 @@ import Home from './pages/Home';
 import RecipeForm from './pages/RecipeForm';
 import SavedRecipe from './pages/SavedRecipe'; 
 import About from './pages/About';
+import CreateRecipe from './pages/CreateRecipe';
 
 
 function App() {
@@ -23,9 +24,9 @@ function App() {
         <Routes>
           {/* HOME Component */}
           <Route path="/" element={<Home />} />
-          <Route path="/recipe/create" element={<RecipeForm />} />
+          <Route path="/recipe/create" element={<CreateRecipe />} />
           <Route path="/recipe/edit/:id" element={<RecipeForm />} />
-          <Route path="/saved-recipes" element={SavedRecipe} />
+          <Route path="/saved-recipes" element={<SavedRecipe />} />
           <Route path="/about" element={<About />} />
         </Routes>
       </Router>
