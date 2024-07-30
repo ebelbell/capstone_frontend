@@ -1,11 +1,12 @@
 import React from 'react';
-import Card from '../components/cards/Card';
+//import Card from '../components/cards/Card';
 
 const Home = () => {
   return (
     <>
-      <h2>Welcome! </h2>
-      <Card />
+      <h2>Welcome to the recipe app! </h2>
+      
+      {/* <Card /> */}
     </>
   );
 };

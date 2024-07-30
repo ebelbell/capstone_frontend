@@ -12,7 +12,9 @@ function Navbar() {
                 {/* Recipe Form for creating and updating */}
                 <Link to="/recipe-form" className="nav-link">Create A Recipe </Link>
                 {/* Recipe Details for showing a recipe */}
-                <Link to="/recipe/:id" className="nav-link">Your Recipes</Link>
+                <Link to="/saved-recipes" className="nav-link">Your Recipes</Link>
+                {/* IF AXIOS WAS LINKED */}
+                {/* <Link to="/recipe/:id" className="nav-link">Your Recipes</Link> */}
                 <Link to="/about" className="nav-link">About</Link> 
 
             </div>
