@@ -6,6 +6,7 @@ const Home = () => {
     <>
       <h2>Welcome to the recipe app! </h2>
       
+     
       {/* <Card /> */}
     </>
   );
