@@ -1,0 +1,16 @@
+.cards__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+.cards__container {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.cards__items {
+    margin-bottom: auto;
+}
