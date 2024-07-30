@@ -55,7 +55,7 @@ const RecipeForm = () => {
         await axios.put(`http://localhost:3000/recipe/${id}`, recipe);
       } else {
         // CREATE NEW RECIPE 
-        await axios.post('/api/recipes', recipe);
+        await axios.post('/api/recipe', recipe);
       }
       history.push('/'); // Redirect to home or recipes list
     } catch (err) {
@@ -71,7 +71,7 @@ const RecipeForm = () => {
       <h2>Create or Update A Recipe</h2>
       <form onSubmit={handleSubmit}>
         <div>
-          <label htmlFor="recipeTitle">Recipe Title:</label>
+          <label htmlFor="recipeTitle">Recipe Title: </label>
           <input
             type="text"
             id="recipeTitle"

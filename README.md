@@ -12,6 +12,6 @@ Recipe API manages recipes using CRUD operations. This app is intended for users
 ---------------------------
 ## Resources:
 
-- https://getbootstrap.com/docs/4.0/components/navbar/ 
+- https://www.youtube.com/watch?v=Law7wfdg_ls using the BrowserRouter, Route and Switch.
 
 

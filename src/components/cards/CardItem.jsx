@@ -10,7 +10,7 @@ function CardItem() {
             <Link className="recipe__item__link">
             {/* The card's description and image  */}
               <figure className="recipe__item__pic-wrap">
-                <img src="/" alt="Peanut Butter Cookies" className="recipe__item__img"/>
+              <img src={`/images/${src}`} alt="PB-cookies" className="recipe__item__img" />
               </figure>
               <div className="recipe__item__info">
                 <h5 className="recipe__item__text"></h5>
