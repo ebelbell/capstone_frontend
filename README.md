@@ -14,5 +14,10 @@ Recipe API manages recipes using CRUD operations. This app is intended for users
 
 - https://www.youtube.com/watch?v=Law7wfdg_ls using the BrowserRouter, Route and Switch.
 
+## Future Goals:
+
+- link my axios on localhost:3000
+- use the edamam API: https://developer.edamam.com/edamam-recipe-api 
+
 ## Backend
 https://github.com/ebelbell/capstone_backend.git
